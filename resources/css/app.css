@@ -1,0 +1,55 @@
+@import "flowbite/src/themes/default";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background: radial-gradient(grey, black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+position: fixed;
+top: 0;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.red {
+    color: red;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+}
+.green {
+    color: green;
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+}
+.blue {
+    color: blue;
+    background: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+}
+
