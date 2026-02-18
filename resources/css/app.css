@@ -6,7 +6,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
+/* body {
     background: radial-gradient(grey, black);
     height: 100vh;
     display: flex;
@@ -20,9 +20,9 @@ top: 0;
 footer {
     position: absolute;
     bottom: 0;
-}
+} */
 
-.red {
+/* .red {
     color: red;
     background: pink;
     display: flex;
@@ -51,5 +51,100 @@ footer {
     width: 150px;
     height: 30px;
     border-radius: 15px;
-}
+} */
 
+.header-menu a {
+    color: #707070;
+    text-decoration: none;
+}
+.header-menu {
+    display: flex;
+    gap: 40px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 40px;
+    align-items: center;
+    color: #707070;
+    font-size: 14px;
+}
+select {
+    border: none;
+    border-radius: 30px;
+}
+.line {
+    border-top: 1px solid #E1E1E1;
+
+    margin: 0 40px;
+}
+.search{
+    display: flex;
+}
+.but_color {
+    background-color: #0075B1;
+    color: white;
+    border-radius: 8px;
+}
+.inp_sear {
+    width: 545px;
+}
+.title {
+    font-size: 72px;
+    line-height: 90%;
+}
+.main-text {
+    font-size: 16px;
+}
+.block_1 {
+    height: 701px;
+    padding-left: 40px;
+}
+.block_2 {
+    display: flex;
+    gap: 32px;
+    background-color: #E1E1E1;
+    padding: 20px 105px;
+}
+.line_vert {
+    border-right: 2px solid black;
+    margin: 0 10px 0 10px;
+}
+.tsize-14 {
+    font-size: 14px;
+    font-weight: 800px;
+}
+.tsize-12 {
+    font-size: 12px;
+}
+.mini {
+    color: #707070;
+    font-size: 14px;
+}
+.osnov {
+    font-size: 24px;
+    font-weight: 600;
+}
+.blue {
+color: #0075B1;
+font-size: 96px;
+}
+.but_podrob {
+    color: #0075B1;
+}
+.left {
+    width: 610px;
+    height: 380px;
+    background-color: #F1F1F1;
+}
+.cent {
+    background-color: #F1F1F1;
+    height: 380px;
+    width: 240px;
+    padding: 15px;
+}
+.right {
+    background-color: #F1F1F1;
+    height: 380px;
+    width: 433px;
+}
