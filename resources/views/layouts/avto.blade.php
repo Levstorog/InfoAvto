@@ -36,18 +36,18 @@
             </div>
             <div class="line"></div>
             <div class="header">
-                <img src="../resources/view/img/logo.svg" alt="">
-                <!-- настроить картинку лого(не отображается возможно проблема в путе) -->
+                <img src="./img/logo.svg" alt="">
                  <div class="flex gap-2">
-                    <button class="but_color px-2.5 py-2"><img src="" alt="">Каталог</button><!--картинка бургерного меню-->
+                    <button class="but_color px-2.5 py-2 flex items-center gap-1"><img src="./img/burg_menu.svg" alt="">Каталог</button>
                     <div class="search">
-                        <img src="" alt=""><!--картинка лупы-->
-                        <input class="rounded-lg inp_sear" type="text" placeholder="Поиск">
+                        <div class="flex items-center">
+                            <input class="img_search rounded-lg inp_sear" type="text" placeholder="Поиск">
+                        </div>
                     </div>
                  </div>
-                 <div class="">
-                    <button class=""><img src="" alt=""></button><!--картинка Покупки -->
-                    <button><img src="" alt=""></button><!--картинка Профиль-->
+                 <div class="flex items-center gap-2">
+                    <button class=""><img src="./img/basket.svg" alt=""></button>
+                    <button><img src="./img/profile.svg" alt=""></button>
                  </div>
             </div>
         </header>
@@ -84,28 +84,109 @@
                 </div>
             </div>
             <div class="block_3">
-                <p class="text-3xl pt-10 pb-4 pl-10">Акции и скидки</p>
-                <div class="flex gap-2.5 px-10">
+                <p class="text-3xl pt-10 pb-4 pl-28">Акции и скидки</p>
+                <div class="flex gap-2.5 px-10 mb-5 justify-center"><!--justify-center центрация по центру но по макету должно быть отступами по бокам 40px-->
 
                     <div class="left">
-                        <div class="flex items-center gap-8 px-7">
+                        <div class="flex items-center gap-8 pt-7 pl-7">
                             <div class="">
                                 <p class="mini">Новинка 2025</p>
                                 <p class="osnov">Мега скидка 30% на все <br>фильтры</p>
                             </div>
                             <p class="blue">-30%</p>
                         </div>
-                        <button class="but_podrob">Подробнее -></button>
+                        <button class="but_podrob pl-7">Подробнее ➜</button>
                     </div>
-                    <div class="cent">
-                        <div class="">
+                    <div class="cent p-7">
+                        <div class="pb-10">
                             <p class="mini">Мега скидки</p>
                             <p class="osnov">Бесплатная <br> доставка при <br> заказе от 10 000 ₽</p>
                         </div>
-                        <img src="" alt=""><!--картинка шестерни и гаяного ключа-->
-                        <button class="but_podrob">Подробнее -></button>
+                        <img src="./img/tool.svg" alt="">
+                        <button class="but_podrob">Подробнее ➜</button>
                     </div>
-                    <div class="right"></div>
+                    <div class="right">
+                        <div class="up flex">
+                            <div class="pt-[30px] pl-[30px]">
+                                <p class="text-xs text-[#F7F7F7] pb-[10px]">Мега скидки</p>
+                                <p class="text-lg font-semibold text-white pb-7">Сезонное ТО со<br>скидкой</p>
+                                <button class="text-white">Подробнее ➜</button>
+                            </div>
+                            <img src="./img/wheel.svg" alt="">
+                        </div>
+                        <div class="down">
+                            <div class="">
+                                <div class="float-right p-[30px]">
+                                    <p class="mini">Мега скидки</p>
+                                    <p class="osnov">Второй товар —<br>со скидкой 50%</p>
+                                </div>
+                                <button class="but_podrob pl-[30px] pt-[137px]">Подробнее ➜</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block_4 px-10 py-5 bg-[#F7F7F7]">
+                <div class="flex justify-between mb-[50px]">
+                    <p class="text-3xl">Популярные товары</p>
+                    <div class="text-xl">
+                        <button>&lt;</button>
+                        |
+                        <button>&gt;</button>
+                    </div>
+                </div>
+                <div class="cards flex gap-7 justify-center">
+
+                    <div class="card">
+                        <img class="rounded-[10px]" src="./img/populity_product.svg" alt="">
+                        <p class="title_card text-sm">Предохранитель Круглый 40A (36VDC)</p>
+                        <p class="count text-xs text-[#929292]">пласт. (уп. по 50 шт)</p>
+                        <div class="flex gap-[10px] items-center">
+                            <p class="price text-[16px]">908.00₽</p>
+                            <strike class="sale text-[#929292] text-[12px]">15 000₽</strike>
+                        </div>
+                        <button class="but_color px-[12px] py-[8px]">Купить</button>
+                    </div>
+                    <div class="card">
+                        <img class="rounded-[10px]" src="./img/populity_product.svg" alt="">
+                        <p class="title_card text-sm">Предохранитель Круглый 40A (36VDC)</p>
+                        <p class="count text-xs text-[#929292]">пласт. (уп. по 50 шт)</p>
+                        <div class="flex gap-[10px] items-center">
+                            <p class="price text-[16px]">908.00₽</p>
+                            <strike class="sale text-[#929292] text-[12px]">15 000₽</strike>
+                        </div>
+                        <button class="but_color px-[12px] py-[8px]">Купить</button>
+                    </div>
+                    <div class="card">
+                        <img class="rounded-[10px]" src="./img/populity_product.svg" alt="">
+                        <p class="title_card text-sm">Предохранитель Круглый 40A (36VDC)</p>
+                        <p class="count text-xs text-[#929292]">пласт. (уп. по 50 шт)</p>
+                        <div class="flex gap-[10px] items-center">
+                            <p class="price text-[16px]">908.00₽</p>
+                            <strike class="sale text-[#929292] text-[12px]">15 000₽</strike>
+                        </div>
+                        <button class="but_color px-[12px] py-[8px]">Купить</button>
+                    </div>
+                    <div class="card">
+                        <img class="rounded-[10px]" src="./img/populity_product.svg" alt="">
+                        <p class="title_card text-sm">Предохранитель Круглый 40A (36VDC)</p>
+                        <p class="count text-xs text-[#929292]">пласт. (уп. по 50 шт)</p>
+                        <div class="flex gap-[10px] items-center">
+                            <p class="price text-[16px]">908.00₽</p>
+                            <strike class="sale text-[#929292] text-[12px]">15 000₽</strike>
+                        </div>
+                        <button class="but_color px-[12px] py-[8px]">Купить</button>
+                    </div>
+                    <div class="card">
+                        <img class="rounded-[10px]" src="./img/populity_product.svg" alt="">
+                        <p class="title_card text-sm">Предохранитель Круглый 40A (36VDC)</p>
+                        <p class="count text-xs text-[#929292]">пласт. (уп. по 50 шт)</p>
+                        <div class="flex gap-[10px] items-center">
+                            <p class="price text-[16px]">908.00₽</p>
+                            <strike class="sale text-[#929292] text-[12px]">15 000₽</strike>
+                        </div>
+                        <button class="but_color px-[12px] py-[8px]">Купить</button>
+                    </div>
                 </div>
             </div>
         </main>
