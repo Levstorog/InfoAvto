@@ -20,6 +20,10 @@ Route::get('/avto', function() {
     return view('layouts.avto');
 });
 
+Route::get('/catalog', function() {
+    return view('layouts.catalog');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

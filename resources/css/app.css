@@ -185,3 +185,19 @@ font-size: 96px;
 .card {
     width: 250px;
 }
+
+.catalog-left-panel {
+    width: 30%;
+    height: 100%;
+}
+
+.catalog-right-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+}
+
+.catalog-main {
+    display: flex;
+    flex-direction: row;
+}
