@@ -185,6 +185,16 @@ font-size: 96px;
 .card {
     width: 250px;
 }
+.block_5 {
+    padding: 40px;
+}
+.form {
+    background-image: url("../../public//img/block5img.svg");
+    width: 100%;
+    height: 208px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .catalog-left-panel {
     width: 30%;
