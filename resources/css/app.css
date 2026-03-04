@@ -73,7 +73,7 @@ footer {
     color: #707070;
     font-size: 14px;
 }
-select {
+header select {
     border: none;
     border-radius: 30px;
 }
@@ -182,7 +182,7 @@ font-size: 96px;
     border: 2px solid #F1F1F1;
 }
 
-.card {
+.block-4 .card {
     width: 250px;
 }
 .block_5 {
@@ -194,6 +194,7 @@ font-size: 96px;
     height: 208px;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 .catalog-left-panel {
@@ -210,4 +211,32 @@ font-size: 96px;
 .catalog-main {
     display: flex;
     flex-direction: row;
+}
+.block_inp p {
+    background-color: white;
+    color: black;
+}
+.block_inp select {
+    border: none;
+    width: 176px;
+}
+.block_inp input::placeholder {
+color: black;
+}
+
+.block_6 .card {
+    background-color: #F7F7F7;
+    width: 313px;
+    height: 368px;
+    border-radius: 10px;
+}
+.block_6 .card img {
+border-radius: 10px 10px 0 0;
+}
+.but_fot {
+    border-radius: 100%;
+    transition: 0.5s;
+}
+.but_fot:hover {
+    background-color: black;
 }

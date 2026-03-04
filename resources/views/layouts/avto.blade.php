@@ -48,7 +48,7 @@
             </div>
             <div class="block_3">
                 <p class="text-3xl pt-10 pb-4 pl-28">Акции и скидки</p>
-                <div class="flex gap-2.5 px-10 mb-5 justify-center"><!--justify-center центрация по центру но по макету должно быть отступами по бокам 40px-->
+                <div class="flex gap-2.5 px-10 mb-5 justify-center">
 
                     <div class="left">
                         <div class="flex items-center gap-8 pt-7 pl-7">
@@ -92,7 +92,7 @@
             <div class="block_4 px-10 py-5 bg-[#F7F7F7]">
                 <div class="flex justify-between mb-[50px]">
                     <p class="text-3xl">Популярные товары</p>
-                    <div class="text-xl">
+                    <div class="text-xl flex items-center gap-3">
                         <button>&lt;</button>
                         |
                         <button>&gt;</button>
@@ -154,10 +154,95 @@
             </div>
             <div class="block_5">
                 <div class="form">
-
+                    <div class="pt-[30px] pb-[35px] text-center">
+                        <p class="text-2xl">Работаете с техникой — работайте с профессионалами</p>
+                        <p class="text-sm">Оставьте заявку или позвоните нам — наши специалисты быстро подберут запчасти под ваш <br> транспорт.</p>
+                    </div>
+                    <div class="block_inp flex gap-[6px] justify-center">
+                        <p>
+                            <select name="" id="">
+                                <option value="">Услуги</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </p>
+                        <p>
+                            <select name="" id="">
+                                <option value="">Марка</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </p>
+                        <p>
+                            <!-- Дата и время
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select> -->
+                            <input type="date">
+                        </p>
+                        <p>
+                            <select name="" id="">
+                                <option value="">Филиал</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </p>
+                        <input class="text-black" type="text" placeholder="E-mail">
+                        <input class="text-black" type="text" placeholder="Имя">
+                        <button class="but_color px-[28px] py-2">Отправить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block_6 p-10">
+                <div class="flex justify-between mb-[50px]">
+                    <p class="text-[32px]">Новости</p>
+                    <div class="text-xl flex items-center gap-3">
+                        <button>&lt;</button>
+                        |
+                        <button>&gt;</button>
+                    </div>
+                </div>
+                <div class="cards flex gap-[30px] justify-center">
+                    <div class="card">
+                        <img src="./img/block6img1.svg" alt="">
+                        <div class="px-[17px] py-5">
+                            <p class="text-lg">Новая поставка оригинальных запчастей</p>
+                            <p class="text-sm text-[#707070]">Мы обновили склад — в наличии новые позиции. 
+                                <br>Быстрая отгрузка и гарантия качества на все детали.</p>
+                                <p class="text-sm text-[#707070]">21.11.2025</p>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/block6img3.svg" alt="">
+                        <div class="px-[17px] py-5">
+                            <p class="text-lg">Теперь доставка в день заказа!</p>
+                            <p class="text-sm text-[#707070]">Для клиентов из Челябинска и области - экспресс-доставка автозапчастей <br>прямо в ваш сервис или на стоянку.</p>
+                            <p class="text-sm text-[#707070]">18.11.2025</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/block6img4.svg" alt="">
+                        <div class="px-[17px] py-5">
+                            <p class="text-lg">Теперь доставка в день заказа!</p>
+                            <p class="text-sm text-[#707070]">Для клиентов из Челябинска и области - экспресс-доставка автозапчастей <br>прямо в сервис или стоянку.</p>
+                            <p class="text-sm text-[#707070]">12.11.2025</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/block6img2.svg" alt="">
+                        <div class="px-[17px] py-5">
+                            <p class="text-lg">Новая поставка оригинальных запчастей</p>
+                            <p class="text-sm text-[#707070]">Мы обновили склад — в наличии новые позиции. 
+                                <br>Быстрая отгрузка и гарантия качества на все детали.</p>
+                            <p class="text-sm text-[#707070]">11.11.2025</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <x-footer></x-footer>
+         
     </body>
 </html>
