@@ -1,5 +1,5 @@
 @import "flowbite/src/themes/default";
-@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "bootstrap-icons/font/bootstrap-icons.css";
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
 
@@ -52,7 +52,7 @@ footer {
     height: 30px;
     border-radius: 15px;
 } */
- body {
+body {
     padding: 0;
     margin: 0;
  }
@@ -197,21 +197,6 @@ font-size: 96px;
     color: white;
 }
 
-.catalog-left-panel {
-    width: 30%;
-    height: 100%;
-}
-
-.catalog-right-panel {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 34px;
-}
-
-.catalog-main {
-    display: flex;
-    flex-direction: row;
-}
 .block_inp p {
     background-color: white;
     color: black;
@@ -239,4 +224,168 @@ border-radius: 10px 10px 0 0;
 }
 .but_fot:hover {
     background-color: black;
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.catalog-left-panel {
+    width: 450px;
+    padding: 20px 20px 20px 40px;
+    height: 100%;
+}
+
+.catalog-right-panel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+}
+
+.catalog-main {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    margin: auto;
+}
+
+.route {
+    color: #707070;
+    font-size: 12px;
+}
+
+.catalog-left-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-left-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-delivery__container {
+  position: relative;
+  width: 200px;
+  height: 10px;
+  margin: 10px 0;
+
+}
+
+.filter-delivery__slider {
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  height: 4px;
+  background: #e7e7e7;
+  border-radius: 5px;
+}
+
+.filter-delivery__range {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  background: none;
+  pointer-events: none;
+  transition: outline 0.2s, outline-offset 0.2s;
+}
+
+.filter-delivery__range:focus {
+  outline: gray 2px solid;
+  outline-offset: 5px;
+  cursor: pointer;
+}
+
+.filter-delivery__range::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background: white;
+  border: 2px solid #0075B1;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-appearance: none;
+
+}
+
+.filter-delivery__range::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background: white;
+  border: 2px solid #0075B1;
+  cursor: pointer;
+  border: none;
+  pointer-events: auto;
+}
+
+input[type=range].filter-price__slider::-ms-thumb {
+  margin-top: 1px;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background: white;
+  border: 2px solid #0075B1;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-delivery__range:focus {
+  outline: gray 2px solid;
+  outline-offset: 3px;
+}
+
+.filter-delivery__progress {
+  position: absolute;
+  height: 4px;
+  background: #0075B1;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.filter-deliver-container-sec {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+    width: 100px;
+    height: 36px;
+    border-radius: 10px;
+    border: gray 1px solid;
+    font-size: 16px;
+    padding: 10px 8px;
+    align-items: center;
+}
+
+.filter-delivery__max, .filter-delivery__min {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.filter-delivery__values {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-div {
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.checkbox-div input:checked {
+    background-color: #707070;
+}
+
+.checkbox-div input::before{
+    background-color: #707070;
+}
+
+.checkbox-div h5 {
+    margin-bottom: 8px;
 }

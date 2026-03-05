@@ -48,7 +48,7 @@
             </div>
             <div class="block_3">
                 <p class="text-3xl pt-10 pb-4 pl-28">Акции и скидки</p>
-                <div class="flex gap-2.5 px-10 mb-5 justify-center">
+                <div class="flex gap-2.5 px-10 mb-5 justify-center"><!--justify-center центрация по центру но по макету должно быть отступами по бокам 40px-->
 
                     <div class="left">
                         <div class="flex items-center gap-8 pt-7 pl-7">
@@ -92,7 +92,7 @@
             <div class="block_4 px-10 py-5 bg-[#F7F7F7]">
                 <div class="flex justify-between mb-[50px]">
                     <p class="text-3xl">Популярные товары</p>
-                    <div class="text-xl flex items-center gap-3">
+                    <div class="text-xl">
                         <button>&lt;</button>
                         |
                         <button>&gt;</button>

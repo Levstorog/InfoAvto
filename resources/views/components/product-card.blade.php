@@ -5,7 +5,7 @@
         font-size: 16px;
     }
 
-    .product-price div strike {
+    .color-strike {
         color: #707070;
         font-size: 12px;
     }
@@ -44,6 +44,6 @@
     <p>Предохранитель круглый 40А (36VDC)</p>
     <span>пласт. (уп. по 50шт)</span>
     </div>
-    <p class="product-price">908.00$ <strike>15 000$</strike></p>
+    <p class="product-price">908.00₽ <strike class="color-strike">15 000₽</strike></p>
     <button>Купить</button>
 </div>
