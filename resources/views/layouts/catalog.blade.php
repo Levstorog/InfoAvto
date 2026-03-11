@@ -16,12 +16,11 @@
 
 <body class="font-sans antialiased catalog">
     <x-header></x-header>
-    <div class="catalog-main bg-[#F7F7F7]"><!--Ебучий овошь че у тебя с границами основы по макету у основы разный фон с header и footer-->
+    <div class="catalog-main bg-[#F7F7F7]">
         <div class="catalog-left-panel">
             <p class="route">Главная / Каталог товаров</p>
-            <h3>Каталог товаров</h3>
-            <div class="filter__section">
-                <h3>Срок поставки</h3>
+            <h3 class="text-[24px] font-semibold my-[12px]">Каталог товаров</h3>
+            <div class="filter__section mb-[32px]">
                 <div class="filter-delivery">
                     <div class="filter-delivery__container">
                         <div class="filter-delivery__slider">
@@ -37,25 +36,63 @@
                 </div>
             </div>
             <div class="checkbox-div">
-                <h5>Категория</h5>
-                <input type="checkbox">Option</br>
-                <input type="checkbox">Option</br>
-                <input type="checkbox">Option</br>
-                <input type="checkbox">Option</br>
+                <h5 class="text-[18px] mb-[20px] font-semibold">Категория</h5>
+                <div>
+                <input type="checkbox">Option
+                </div>
+                <div>
+                <input type="checkbox">Option
+                </div>
+                <div>
+                <input type="checkbox">Option
+                </div>
+                <div>
+                <input type="checkbox">Option
+                </div>
             </div>
             <div class="checkbox-div">
-                <h5>Брэнд</h5>
-                <input type="checkbox">Option</br>
-                <input type="checkbox">Option</br>
-                <input type="checkbox">Option</br>
-                <input type="checkbox">Option</br>
+                <h5 class="text-[18px] mb-[20px] font-semibold">Брэнд</h5>
+                <div>
+                <input type="checkbox">Option
+                </div>
+                <div>
+                <input type="checkbox">Option
+                </div>
+                <div>
+                <input type="checkbox">Option
+                </div>
+                <div>
+                <input type="checkbox">Option
+                </div>
             </div>
         </div>
         <div class="catalog-right-panel">
+            <div class="card-container">
             @for($i = 0; $i < 12; $i++)
                 <x-product-card></x-product-card>
                 @endfor
-
+            </div>
+            <div class="flex items-center gap-2 mb-[60px]">
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200">
+                1
+            </button>
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200">
+                2
+            </button>
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200">
+                3
+            </button>
+            <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-500 hover:border-blue-500 hover:text-blue-500 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
         </div>
     </div>
     <x-footer></x-footer>

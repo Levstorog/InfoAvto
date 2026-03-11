@@ -36,6 +36,16 @@
         color: white;
         border-radius: 6px;
     }
+
+    @media screen and (max-width:425px) {
+    .product-card {
+        width: 182px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+    }
 </style>
 
 <div class="product-card">
