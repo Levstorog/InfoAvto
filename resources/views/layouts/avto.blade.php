@@ -16,40 +16,58 @@
         <x-header></x-header>
         <main>
             <div class="block_1">
-                <p class="title mb-5">Запчасти <br>для коммерческой <br>техники и спецтехники</p>
-                <p class="main_text mb-10">Ваш транспорт — это инструмент, который должен работать, а не стоять в ремонте. <br>Мы помогаем механикам, автопаркам и сервисным центрам держать технику <br>в строю, поставляя качественные запчасти для грузовиков, автобусов, спецтехники <br>и прицепов — точно в срок и по лучшей цене.</p>
-                <button class="but_color px-12 py-3">Стать клиентом</button>
+                <div class="hide">
+                    <p class="title mb-5">Запчасти <br>для коммерческой <br>техники и спецтехники</p>
+                    <p class="main_text mb-10">Ваш транспорт — это инструмент, который должен работать, а не стоять в ремонте. <br>Мы помогаем механикам, автопаркам и сервисным центрам держать технику <br>в строю, поставляя качественные запчасти для грузовиков, автобусов, спецтехники <br>и прицепов — точно в срок и по лучшей цене.</p>
+                    <button class="but_color px-12 py-3">Стать клиентом</button>
+                </div>
+                <div class="no_hide">
+                    <p class="text-5xl pb-2">Запчасти для коммерческой техники и спецтехники</p>
+                        <p class="text-3xl pb-4">Быстро, надежно, без простоев</p>
+                        <button class="but_color px-12 py-3">Стать клиентом</button>
+                </div>
             </div>
             <div class="block_2">
-                <div class="w-44">
-                    <p class="tsize-14">Широкий ассортимент</p>
-                    <p class="tsize-12">Запчасти для европейских, российских и китайских марок: от двигателя до подвески.</p>
+                <div class="hide justify-center">
+                    <div class="w-44">
+                        <p class="tsize-14">Широкий ассортимент</p>
+                        <p class="tsize-12">Запчасти для европейских, российских и китайских марок: от двигателя до подвески.</p>
+                    </div>
+                        <div class="line_vert"></div>
+                    <div class="w-44">
+                        <p class="tsize-14">Проверенные поставщики</p>
+                        <p class="tsize-12">Оригинал и надежные аналоги от ведущих брендов.</p>
+                    </div>
+                        <div class="line_vert"></div>
+                    <div class="w-44">
+                        <p class="tsize-14">Быстрая доставка по РФ</p>
+                        <p class="tsize-12">Работаем с надежными ТК, отправляем в день заказа.</p>
+                    </div>
+                        <div class="line_vert"></div>
+                    <div class="w-44">
+                        <p class="tsize-14">Помощь в подборе</p>
+                        <p class="tsize-12">Наши специалисты помогут найти нужную деталь по VIN, артикулу или фото.</p>
+                    </div>
+                        <div class="line_vert"></div>
+                    <div class="w-44">
+                        <p class="tsize-14">Оплата, как удобно</p>
+                        <p class="tsize-12">Для юрлиц и ИП, безналичный расчет, отсрочка постоянным клиентам.</p>
+                    </div>
                 </div>
-                    <div class="line_vert"></div>
-                <div class="w-44">
-                    <p class="tsize-14">Проверенные поставщики</p>
-                    <p class="tsize-12">Оригинал и надежные аналоги от ведущих брендов.</p>
-                </div>
-                    <div class="line_vert"></div>
-                <div class="w-44">
-                    <p class="tsize-14">Быстрая доставка по РФ</p>
-                    <p class="tsize-12">Работаем с надежными ТК, отправляем в день заказа.</p>
-                </div>
-                    <div class="line_vert"></div>
-                <div class="w-44">
-                    <p class="tsize-14">Помощь в подборе</p>
-                    <p class="tsize-12">Наши специалисты помогут найти нужную деталь по VIN, артикулу или фото.</p>
-                </div>
-                    <div class="line_vert"></div>
-                <div class="w-44">
-                    <p class="tsize-14">Оплата, как удобно</p>
-                    <p class="tsize-12">Для юрлиц и ИП, безналичный расчет, отсрочка постоянным клиентам.</p>
+                <div class="no_hide">
+                    <div class="flex justify-evenly gap-8">
+                        <button class="text-[24px]">&lt;</button>
+                        <div class="text-center">
+                            <p class="tsize-14">Широкий ассортимент</p>
+                            <p class="tsize-12">Запчасти для европейских, российских и китайских марок: от двигателя до подвески.</p>
+                        </div>
+                        <button class="text-[24px]">&gt;</button>
+                    </div>
                 </div>
             </div>
             <div class="block_3">
                 <p class="text-3xl pt-10 pb-4 pl-28">Акции и скидки</p>
-                <div class="flex gap-2.5 px-10 mb-5 justify-center"><!--justify-center центрация по центру но по макету должно быть отступами по бокам 40px-->
-
+                <div class="block_sale">
                     <div class="left">
                         <div class="flex items-center gap-8 pt-7 pl-7">
                             <div class="">
@@ -58,7 +76,7 @@
                             </div>
                             <p class="blue">-30%</p>
                         </div>
-                        <button class="but_podrob pl-7">Подробнее ➜</button>
+                        <button class="but_podrob1">Подробнее ➜</button>
                     </div>
                     <div class="cent p-7">
                         <div class="pb-10">
@@ -66,7 +84,7 @@
                             <p class="osnov">Бесплатная <br> доставка при <br> заказе от 10 000 ₽</p>
                         </div>
                         <img src="./img/tool.svg" alt="">
-                        <button class="but_podrob">Подробнее ➜</button>
+                        <button class="but_podrob2">Подробнее ➜</button>
                     </div>
                     <div class="right">
                         <div class="up flex">
@@ -83,11 +101,46 @@
                                     <p class="mini">Мега скидки</p>
                                     <p class="osnov">Второй товар —<br>со скидкой 50%</p>
                                 </div>
-                                <button class="but_podrob pl-[30px] pt-[137px]">Подробнее ➜</button>
+                                <button class="but_podrob3">Подробнее ➜</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="block_3_adaptiv">
+                <p class="text-3xl pt-10 pb-4 pl-28">Акции и скидки</p>
+                <div class="flex justify-between bg-[#f1f1f1] mx-[10%] py-[18px] px-[16px] mb-[8px]">
+                    <div class="">
+                        <p class="mini">Новинка 2025</p>
+                        <p class="osnov pb-[20px]">Мега скидка 30% на все <br>фильтры</p>
+                        <button class="text-[#0075b1]">Подробнее ➜</button>
+                    </div>
+                    <p class="blue">-30%</p>
+                </div>
+                <div class="flex justify-between bg-[#f1f1f1] mx-[10%] py-[18px] px-[16px] mb-[8px]">
+                    <div class="">
+                        <p class="mini">Мега скидки</p>
+                        <p class="osnov pb-[20px]">Бесплатная доставка при заказе<br>от 10 000 ₽</p>
+                        <button class="text-[#0075b1]">Подробнее ➜</button>
+                    </div>
+                    <img src="./img/tool.svg" alt="">
+                </div>
+                <div class="flex justify-between bg-[#0075B1] mx-[10%] pt-[18px] px-[16px] mb-[8px] text-white">
+                    <div class="">
+                        <p class="text-[12px]">Мега скидки</p>
+                        <p class="osnov pb-[20px]">Мега скидка 30% на все <br>фильтры</p>
+                        <button class="text-white">Подробнее ➜</button>
+                    </div>
+                    <img src="./img/wheel.svg" alt="">
+                </div>
+                <div class="flex justify-between bg-[#f1f1f1] mx-[10%] py-[18px] px-[16px]">
+                    <div class="">
+                        <p class="mini">Мега скидки</p>
+                        <p class="osnov pb-[20px]">Второй товар - со скидкой 50%</p>
+                        <button class="text-[#0075b1]">Подробнее ➜</button>
+                    </div>
+                </div>
+                
             </div>
             <div class="block_4 px-10 py-5 bg-[#F7F7F7]">
                 <div class="flex justify-between mb-[50px]">
@@ -157,23 +210,21 @@
                     <div class="pt-[30px] pb-[35px] text-center">
                         <p class="text-2xl">Работаете с техникой — работайте с профессионалами</p>
                         <p class="text-sm">Оставьте заявку или позвоните нам — наши специалисты быстро подберут запчасти под ваш <br> транспорт.</p>
+                        <p class="hide_text">Подберем нужную<br>запчасть за 5 минут</p>
                     </div>
-                    <div class="block_inp flex gap-[6px] justify-center">
-                        <p>
+                    <div class="block_inp">
+
                             <select name="" id="">
-                                <option value="">Услуги</option>
+                                <option value="" >Услуги</option>
                                 <option value=""></option>
                                 <option value=""></option>
                             </select>
-                        </p>
-                        <p>
+
                             <select name="" id="">
                                 <option value="">Марка</option>
                                 <option value=""></option>
                                 <option value=""></option>
                             </select>
-                        </p>
-                        <p>
                             <!-- Дата и время
                             <select name="" id="">
                                 <option value=""></option>
@@ -181,14 +232,11 @@
                                 <option value=""></option>
                             </select> -->
                             <input type="date">
-                        </p>
-                        <p>
                             <select name="" id="">
                                 <option value="">Филиал</option>
                                 <option value=""></option>
                                 <option value=""></option>
                             </select>
-                        </p>
                         <input class="text-black" type="text" placeholder="E-mail">
                         <input class="text-black" type="text" placeholder="Имя">
                         <button class="but_color px-[28px] py-2">Отправить</button>

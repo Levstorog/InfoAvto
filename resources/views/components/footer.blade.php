@@ -1,12 +1,15 @@
-<footer class="flex pt-10 pb-[85px] justify-between">
-            <div class="pl-10">
-                <img src="./img/logo.svg" alt="">
-                <div class="mt-[24px] mb-[61px] flex gap-[10px]">
-                    <button class="but_fot"><img src="./img/vk.svg" alt=""></button>
-                    <button class="but_fot"><img src="./img/email.svg" alt=""></button>
-                    <button class="but_fot"><img src="./img/telegram.svg" alt=""></button>
+<footer class="">
+            <div class="">
+                <div class="logo_mess">
+
+                    <img src="./img/logo.svg" alt="">
+                    <div class="messag">
+                        <button class="but_fot"><img src="./img/vk.svg" alt=""></button>
+                        <button class="but_fot"><img src="./img/email.svg" alt=""></button>
+                        <button class="but_fot"><img src="./img/telegram.svg" alt=""></button>
+                    </div>
                 </div>
-                <p class="text-[#707070] text-xs">© ООО Интеллект-Авто 2025</p>
+                <p class="text-[#707070] text-xs hide_textt">© ООО Интеллект-Авто 2025</p>
             </div>
             <div class="flex gap-5 pr-10 text-xs">
                 <div class="w-[140px]">
@@ -36,4 +39,5 @@
                     </div>
                 </div>
             </div>
+            <p class="text-[#707070] text-xs no_hide_text">© ООО Интеллект-Авто 2025</p>
          </footer>

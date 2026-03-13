@@ -111,7 +111,7 @@ header select {
     display: flex;
     gap: 32px;
     background-color: #e1e1e1;
-    padding: 20px 105px;
+    padding: 20px 0px;
 }
 .line_vert {
     border-right: 2px solid black;
@@ -137,9 +137,18 @@ header select {
     color: #0075b1;
     font-size: 96px;
 }
-.but_podrob {
+.but_podrob1 {
+    color: #0075b1;
+    padding-left: 28px;
+}
+.but_podrob2 {
     color: #0075b1;
 }
+.but_podrob3 {
+    color: #0075b1;
+    padding: 137px 0 0 30px;
+}
+
 .left {
     width: 610px;
     height: 380px;
@@ -187,7 +196,7 @@ header select {
     padding: 40px;
 }
 .form {
-    background-image: url("../../public//img/block5img.svg");
+    background-image: url("../../public//img/шина.png");
     width: 100%;
     height: 208px;
     background-repeat: no-repeat;
@@ -195,13 +204,15 @@ header select {
     color: white;
 }
 
-.block_inp p {
-    background-color: white;
-    color: black;
+.block_inp {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
 }
-.block_inp select {
+.block_inp select, input {
     border: none;
     width: 176px;
+    color: black;
 }
 .block_inp input::placeholder {
 color: black;
@@ -223,10 +234,38 @@ border-radius: 10px 10px 0 0;
 .but_fot:hover {
     background-color: black;
 }
+.hide_text {
+    display: none;
+}
+.block_sale {
+    display: flex;
+    gap: 10px;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.header2 {
+    display: none;
+}
+.no_hide {
+    display: none;
+}
+.no_hide_text {
+    display: none;
+}
 
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 85px 40px;
+}
 
-
+.messag {
+    margin: 24px 0 61px 0;
+    display: flex;
+    gap: 10px;
+}
 
 /* ///////////////////////////////////////////////////////////////////////// */
 
@@ -408,7 +447,68 @@ input[type='checkbox'] {
     background-color: #707070;
 }
 
+
+
+@media (max-width: 1024px) {
+    .block_3 {
+        display: none;
+    }
+    .block_3_adaptiv {
+        display: block;
+    }
+    .header1{
+        display: none;
+    }
+    .header2{
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+    .no_hide {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+    }
+    .hide_textt {
+        display: none;
+    }
+    .no_hide_text {
+        display: block;
+    }
+    footer {
+        display: block;
+    }
+    .logo_mess {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .messag {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1330px) {
+    .block_inp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block_inp select, input {
+        width: 60%;
+    }
+    .form {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 425px) {
+    
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
