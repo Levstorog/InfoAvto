@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,9 +21,10 @@ Route::get('/avto', function() {
     return view('layouts.avto');
 });
 
-Route::get('/catalog', function() {
-    return view('layouts.catalog');
-});
+Route::get('/catalog', function () {
+    $products = Product::all();
+    return view('layouts.catalog', compact('products'));
+})->name('layouts.catalog');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -48,12 +48,25 @@
     }
 </style>
 
+@props(['product'])
+
 <div class="product-card">
-    <img src="img/product-img.png" alt="">
+    @if($product->image)
+        <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
+    @else
+        <img src="{{ asset('img/product-img.png') }}" alt="{{ $product->name }}">
+    @endif
     <div>
-    <p>Предохранитель круглый 40А (36VDC)</p>
-    <span>пласт. (уп. по 50шт)</span>
+        <p>{{ $product->name }}</p>
+        @if($product->description)
+            <span>{{ Str::limit($product->description, 50) }}</span>
+        @endif
     </div>
-    <p class="product-price">908.00₽ <strike class="color-strike">15 000₽</strike></p>
+    <p class="product-price">
+        {{ number_format($product->price, 2, '.', ' ') }}₽
+        @if($product->old_price)
+            <strike class="color-strike">{{ number_format($product->old_price, 2, '.', ' ') }}₽</strike>
+        @endif
+    </p>
     <button>Купить</button>
 </div>
