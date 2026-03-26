@@ -22,7 +22,7 @@ Route::get('/avto', function() {
 });
 
 Route::get('/catalog', function () {
-    $products = Product::all();
+    $products = Product::paginate(12);
     return view('layouts.catalog', compact('products'));
 })->name('layouts.catalog');
 

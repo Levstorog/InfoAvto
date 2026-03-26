@@ -449,6 +449,55 @@ input[type='checkbox'] {
 
 
 
+@media (max-width: 1330px) {
+    .block_inp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .block_inp select, input {
+        width: 60%;
+    }
+    .form {
+        height: 100%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.media-catalog {
+    display: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.catalog-search {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .catalog-left-panel {
+        display: none;
+    }
+
+    .catalog-main {
+        flex-direction: column;
+    }
+
+    .media-catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .catalog-right-panel {
+        margin-top: 20px;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .block_3 {
         display: none;
@@ -492,22 +541,12 @@ input[type='checkbox'] {
     .messag {
         margin: 0;
     }
-}
-
-@media (max-width: 1330px) {
-    .block_inp {
-        flex-direction: column;
-        align-items: center;
-    }
-    .block_inp select, input {
-        width: 60%;
-    }
-    .form {
-        height: 100%;
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 425px) {
+@media (max-width: 425px) {
     
     .card-container {
         display: grid;
@@ -530,5 +569,135 @@ input[type='checkbox'] {
 
     .product-card img {
         height: 180px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .filter-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .filter-modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+
+    .filter-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 420px;
+        height: 100%;
+        background: #F7F7F7;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .filter-modal-overlay.active .filter-modal {
+        transform: translateX(0);
+    }
+
+    .filter-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px;
+        background: #F7F7F7;
+        flex-shrink: 0;
+    }
+
+    .filter-modal-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        color: #1F2937;
+    }
+
+    .filter-modal-close {
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: #6B7280;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        transition: all 0.2s;
+    }
+
+    .filter-modal-close:hover {
+        background-color: #E5E7EB;
+        color: #1F2937;
+    }
+
+    .filter-modal-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 24px;
+        background: #F7F7F7;
+    }
+
+    .filter-modal-footer {
+        padding: 20px 24px;
+        background: #F7F7F7;
+        flex-shrink: 0;
+        text-align: left;
+    }
+
+    .filter-clear-text {
+        color: #EF4444;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.2s;
+        text-decoration: none;
+    }
+
+    .filter-clear-text:hover {
+        color: #DC2626;
+        text-decoration: underline;
+    }
+
+    .filter-modal-body .filter-delivery {
+        width: 100%;
+    }
+
+    .filter-modal-body{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1201px) {
+    .filter-modal-overlay {
+        display: none !important;
+    }
+
+    .filter-btn {
+        display: none !important;
+    }
+
+    .desktop-only {
+        display: block !important;
     }
 }
