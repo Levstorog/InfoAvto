@@ -17,14 +17,16 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/avto', function() {
-    return view('layouts.avto');
-});
 
 Route::get('/catalog', function () {
-    $products = Product::paginate(12);
+    $products = Product::all();
     return view('layouts.catalog', compact('products'));
 })->name('layouts.catalog');
+
+Route::get('/avto', function () {
+    $products = Product::all();
+    return view('layouts.avto', compact('products'));
+})->name('avto.page');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

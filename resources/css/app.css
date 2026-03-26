@@ -108,8 +108,8 @@ header select {
     background-size: cover;
 }
 .block_2 {
-    display: flex;
-    gap: 32px;
+    /* display: flex;
+    gap: 32px; */
     background-color: #e1e1e1;
     padding: 20px 0px;
 }
@@ -254,6 +254,12 @@ border-radius: 10px 10px 0 0;
     display: none;
 }
 
+.hide_block2 {
+    display: flex;
+    gap: 32px;
+    background-color: #e1e1e1;
+    padding: 20px 0px;
+}
 
 footer {
     display: flex;
@@ -447,6 +453,9 @@ input[type='checkbox'] {
     background-color: #707070;
 }
 
+.block_3_adaptiv{
+    display: none;
+}
 
 
 @media (max-width: 1330px) {

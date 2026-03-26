@@ -22,9 +22,9 @@
         </div>
         <div class="line"></div>
         <div class="header">
-            <img src="./img/logo.svg" alt="">
+            <a href="{{ route('avto.page') }}"><img src="./img/logo.svg" alt=""></a>
             <div class="flex gap-2">
-                <button class="but_color px-2.5 py-2 flex items-center gap-1"><img src="./img/burg_menu.svg" alt="">Каталог</button>
+                <a class="catalog_but" href="{{ route('layouts.catalog') }}"><button class="but_color h-[44px] px-2.5 py-2 flex items-center gap-1"><img src="./img/burg_menu.svg" alt="">Каталог</button></a>
                 <div class="search">
                     <div class="flex items-center">
                         <input class="img_search rounded-lg inp_sear" type="text" placeholder="Поиск">
